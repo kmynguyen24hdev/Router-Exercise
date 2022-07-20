@@ -13,7 +13,7 @@ export async function getAllQuotes() {
   for (const key in data) {
     const quoteObj = {
       id: key,
-      ...data[key],
+      ...data[key], // get all rest data 
     };
 
     transformedQuotes.push(quoteObj);
@@ -25,7 +25,7 @@ export async function getAllQuotes() {
 export async function getSingleQuote(quoteId) {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes/${quoteId}.json`);
   const data = await response.json();
-
+  console.log(data);
   if (!response.ok) {
     throw new Error(data.message || 'Could not fetch quote.');
   }
