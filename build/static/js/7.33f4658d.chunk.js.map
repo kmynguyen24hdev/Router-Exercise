@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/NotFound.js"],"names":["NotFound","className"],"mappings":"qJAMeA,UANf,WACI,OAAS,qBAAKC,UAAU,WAAf,SACL,iDAEP,C","file":"static/js/7.33f4658d.chunk.js","sourcesContent":["function NotFound() {\n    return ( <div className=\"centered\">\n        <p>Page note found</p>\n    </div> );\n}\n\nexport default NotFound;"],"sourceRoot":""}
